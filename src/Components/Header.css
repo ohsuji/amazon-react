@@ -22,15 +22,46 @@
   border-radius: 20px;
 }
 
+.Header-searchInput {
+  padding: 8px;
+  width: 80%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
 .Header-searchIcon {
-  background: #cd9042;
-  padding: 5px;
-  height: 15px;
+  background: #febd69;
+  padding: 4px;
+  border-radius: 0 5px 5px 0;
 }
 
 .Header-option {
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  margin: 0 10px;
   color: #fff;
+}
+
+.Header-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Header-optionLineOne {
+  font-size: 10px;
+}
+.Header-optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+  margin-top: 3px;
+}
+
+.Header-optionBasket {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 0 20px 0 10px ;
+}
+.Header-basketCount {
+  margin-left: 5px;
+  color: #f08804;
 }

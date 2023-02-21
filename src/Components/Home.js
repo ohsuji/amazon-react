@@ -9,7 +9,6 @@ function Home() {
         <img className="Home-image" src="https://m.media-amazon.com/images/I/71z8youNyRL._SX3000_.jpg" alt="Home-image"/>
 
         <div className="Home-row">
-
           <Product/>
         </div>
 

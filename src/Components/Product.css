@@ -1,0 +1,38 @@
+.Product {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
+.Product-rating {
+  display: flex;
+}
+
+.Product-image {
+  max-height: 200px;
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.Product-addBasket {
+  background: #61dafb;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #8768bf #a5a5bf #61dafb;
+}
+
+.Product-price {
+  margin-top: 10px;
+}
+
+.Product-info {
+  height: 100px;
+  margin-bottom: 15px;
+}
