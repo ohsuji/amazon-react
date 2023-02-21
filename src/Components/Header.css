@@ -14,3 +14,23 @@
   object-fit: contain;
   margin: 0 20px;
 }
+
+.Header-search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.Header-searchIcon {
+  background: #cd9042;
+  padding: 5px;
+  height: 15px;
+}
+
+.Header-option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  color: #fff;
+}
