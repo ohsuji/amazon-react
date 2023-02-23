@@ -13,7 +13,7 @@ function Home() {
         </div>
 
         <div className="Home-row">
-
+          <Product/>
           
         </div>
 
