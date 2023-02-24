@@ -6,13 +6,12 @@
 
 .Home-image {
   width: 100%;
-  z-index: -1;
-  margin: 50px 0 -150px 0;
+  margin: 50px 0 -160px 0;
   mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 .Home-row {
+  max-width: 90%;
   display: flex;
-  z-index: 1;
-  margin: 0 5px;
+  margin: 0 auto;
 }
