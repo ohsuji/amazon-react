@@ -25,7 +25,7 @@ function Product({id, title, image, price, rating}) {
 
         <img className="Product-image" src={image} alt="Product-image"/>
 
-        <button className="Product-addBasket">장바구니에 담기</button>
+        <button className="Product-addBasket"> 장바구니에 담기 </button>
       </div>
     </div>
   )

@@ -2,11 +2,14 @@ import React from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search'
 import { ShoppingBasket } from '@mui/icons-material';
+import {Link} from 'react-router-dom';
 
 function Header() {
   return (
     <div className="Header">
-      <img className="Header-logo" src="./images/Header-logo.png"/>
+      <Link to='/'>
+        <img className="Header-logo" src="./images/Header-logo.png"/>
+      </Link>
 
       <div className="Header-search">
         <input className="Header-searchInput" type="text"/>
@@ -24,10 +27,12 @@ function Header() {
           <span className="Header-optionLineTwo"> 주문내역 </span>
         </div>
 
-        <div className="Header-optionBasket">
-          <ShoppingBasket></ShoppingBasket>
-          <span className="Header-optionLineTwo Header-basketCount">0</span>
-        </div>
+        <Link to='Checkout'>
+          <div className="Header-optionBasket">
+            <ShoppingBasket></ShoppingBasket>
+            <span className="Header-optionLineTwo Header-basketCount">0</span>
+          </div>
+        </Link>
       </div>
     </div>
   );
