@@ -1,0 +1,29 @@
+.CheckoutProduct {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.CheckoutProduct-info {
+  padding-left: 20px;
+}
+
+.CheckoutProduct-info > button {
+  background: #8768bf;
+  border: 1px solid;
+  margin-top: 10px;
+  border: #61dafb;
+}
+
+.CheckoutProduct-image {
+  object-fit: contain;
+  width: 180px;
+  height: 180px;
+}
+
+.CheckoutProduct-title {
+  font-size: 17px;
+  font-weight: 800;
+
+}
