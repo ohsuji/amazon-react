@@ -1,4 +1,4 @@
-# 🐰 amazon-clone
+# 🐰 amazon (React)
 
 ### project ing... 
 
