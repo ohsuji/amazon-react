@@ -14,4 +14,6 @@
 }
 .Checkout-ad {
   width: 100%;
+  min-width: 400px;
+  height: 100%;
 }

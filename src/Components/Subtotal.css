@@ -10,12 +10,12 @@
   margin-left: 15px;
 }
 
-.Subtotal-gift {
+.Subtotal-option {
   display: flex;
   align-items: center;
 }
 
-.Subtotal-gift > input {
+.Subtotal-option > input {
   margin-right: 5px;
 }
 

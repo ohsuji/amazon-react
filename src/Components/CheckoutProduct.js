@@ -1,47 +1,40 @@
-import React from 'react'
-import { useStateValue } from '../StateProvider';
-import './Product.css';
+import React from "react";
+import "./CheckoutProduct.css";
+import { useStateValue } from "../StateProvider";
 
-function CheckoutProduct({ id, image, title, price, rating }) {
-  const [{basket}, dispatch] = useStateValue();
+function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
+  const [{ basket }, dispatch] = useStateValue();
   const removeFromBasket = () => {
     dispatch({
-      type: 'REMOVE_FROM_BASKET',
-      id:id,
-
-    })
-  }
+      type: "REMOVE_FROM_BASKET",
+      id: id,
+    });
+  };
 
   return (
     <div className="CheckoutProduct">
-      <img className="CheckoutProduct-image" src={image} alt="CheckoutProduct-image"/>
+      <img className="CheckoutProduct-image" src={image} />
 
       <div className="CheckoutProduct-info">
-        <p className="CheckoutProduct-title"> 
-          { title } 
-        </p>
-
+        <p className="CheckoutProduct-title">{title}</p>
         <p className="CheckoutProduct-price">
-          <small> 가격 : </small> 
-          <strong> { price } </strong>
-          <small> 원 </small> 
+          <small>₩</small>
+          <strong>{price}</strong>
         </p>
+        <div className="checkoutProduct-rating">
+          {Array(rating)
+            .fill()
+            .map((_, i) => (
+              <p>★</p>
+            ))}
+        </div>
+
+        {!hideButton && (
+          <button onClick={removeFromBasket}>장바구니에서 제거하기</button>
+        )}
       </div>
-
-      <div className="CheckoutProduct-rating">
-      { 
-        Array(rating)
-          .fill()
-          .map(() => (
-            <p>★</p>
-          ))
-      }
-      </div>
-
-      <button onClick={removeFromBasket}> 장바구니에서 삭제하기 </button>
-
     </div>
   );
 }
 
-export default CheckoutProduct
+export default CheckoutProduct;

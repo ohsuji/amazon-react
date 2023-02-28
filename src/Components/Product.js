@@ -8,15 +8,10 @@ function Product({id, title, image, price, rating}) {
   const addToBasket = () => {
     dispatch ({
       type: "ADD_TO_BASKET",
-      item: {
-        id: id,
-        title: title,
-        image: image,
-        price: price,
-        rating: rating,
-      },
+      id: id,
     });
   };
+  // console.log("장바구니 확인", basket);
 
   return (
     <div className="Product">

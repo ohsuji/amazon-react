@@ -10,9 +10,9 @@ function App() {
       <Header />
 
       <Routes>
-        
-        <Route exact path="/" element={<Home />} />
-        <Route path="Checkout" element={<Checkout />} />
+
+        <Route exact path="/" element={<Home/>} />
+        <Route path="Checkout" element={<Checkout/>} />
 
       </Routes>
     </BrowserRouter>
