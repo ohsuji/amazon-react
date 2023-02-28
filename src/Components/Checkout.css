@@ -7,13 +7,11 @@
 }
 
 .Checkout-title {
+  padding: 20px 0;
   margin-right: 10px;
-  padding: 10px;
   border-bottom: 1px solid #007185;
   width: 100%;
 }
 .Checkout-ad {
   width: 100%;
-  min-width: 400px;
-  height: 100%;
 }

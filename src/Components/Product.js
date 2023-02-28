@@ -8,7 +8,13 @@ function Product({id, title, image, price, rating}) {
   const addToBasket = () => {
     dispatch ({
       type: "ADD_TO_BASKET",
-      id: id,
+      item: {
+        id: id,
+        title: title,
+        image: image,
+        price: price,
+        rating: rating,
+      },
     });
   };
   // console.log("장바구니 확인", basket);

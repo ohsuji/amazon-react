@@ -5,17 +5,19 @@
 }
 
 .CheckoutProduct-info {
-  padding-left: 20px;
+  padding: 20px;
 }
 
 .CheckoutProduct-info > button {
   background: #8768bf;
   border: 1px solid;
+  border-radius: 3px;
   margin-top: 10px;
-  border: #61dafb;
+  padding: 6px;
 }
 
 .CheckoutProduct-image {
+  border: 1px solid;
   object-fit: contain;
   width: 180px;
   height: 180px;
@@ -24,5 +26,8 @@
 .CheckoutProduct-title {
   font-size: 17px;
   font-weight: 800;
+}
 
+.CheckoutProduct-rating {
+  display: flex;
 }

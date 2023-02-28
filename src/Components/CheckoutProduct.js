@@ -21,7 +21,7 @@ function CheckoutProduct({ id, image, title, price, rating, hideButton }) {
           <small>₩</small>
           <strong>{price}</strong>
         </p>
-        <div className="checkoutProduct-rating">
+        <div className="CheckoutProduct-rating">
           {Array(rating)
             .fill()
             .map((_, i) => (
