@@ -16,3 +16,8 @@
   display: flex;
   margin: 0 auto;
 }
+
+.Home-login {
+  text-decoration: none;
+  color: #fff;
+}

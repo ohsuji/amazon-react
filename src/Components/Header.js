@@ -22,7 +22,9 @@ function Header() {
       <div className="Header-nav">
         <div className="Header-option">
           <span className="Header-optionLineOne"> 안녕하세요! </span>
-          <span className="Header-optionLineTwo"> 로그인하기 </span>
+          <Link to='Login' className="Home-login">
+            <span className="Header-optionLineTwo"> 로그인하기 </span>
+          </Link>
         </div>
 
         <div className="Header-option">
