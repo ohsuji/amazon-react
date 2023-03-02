@@ -15,6 +15,12 @@
   margin: 0 20px;
 }
 
+.Header-myLocation {
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+}
+
 .Header-search {
   display: flex;
   flex: 1;
@@ -24,7 +30,7 @@
 
 .Header-searchInput {
   padding: 8px;
-  width: 80%;
+  width: 100%;
   border: none;
   border-radius: 5px 0 0 5px;
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search'
-import { ShoppingBasket } from '@mui/icons-material';
+import { ShoppingBasket, LocationOn } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
 
@@ -13,6 +13,14 @@ function Header() {
       <Link to='/'>
         <img className="Header-logo" src="./images/Header-logo.png"/>
       </Link>
+
+      <div className="Header-myLocation">
+        <LocationOn></LocationOn> 
+        <div className="Header-option">
+          <span className="Header-optionLineOne"> Deliver to </span>
+          <span className="Header-optionLineTwo"> Republic of Korea </span>
+        </div>
+      </div>
 
       <div className="Header-search">
         <input className="Header-searchInput" type="text"/>
