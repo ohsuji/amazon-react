@@ -4,8 +4,16 @@ import Header from './Components/Header';
 import Home from './Components/Home';
 import Checkout from './Components/Checkout';
 import Login from './Components/Login';
+import { useEffect } from 'react';
+import { getAuth } from "firebase/auth";
 
 function App() {
+  useEffect(() => {
+    getAuth.onAuthStateChanged( => {
+
+    })
+  }, [])
+
   return (
     <BrowserRouter>
       <Header/>

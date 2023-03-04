@@ -1,4 +1,5 @@
-import firebase from './firebase';
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 
 /*
 * @Firebase Config
@@ -14,10 +15,9 @@ const firebaseConfig = {
   measurementId: "G-R42F5SWFV9"
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.fireStore();
-const auth = firebase.auth();
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
 
-export default { db, auth }
+export default { auth }
 
 // $ npm install firebase
