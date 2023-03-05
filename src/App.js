@@ -6,11 +6,25 @@ import Checkout from './Components/Checkout';
 import Login from './Components/Login';
 import { useEffect } from 'react';
 import { getAuth } from "firebase/auth";
+import { useStateValue } from './StateProvider';
 
 function App() {
-  useEffect(() => {
-    getAuth.onAuthStateChanged( => {
 
+  const [ {}, dispatch ] = useStateValue();
+
+  useEffect(() => {
+    getAuth.onAuthStateChanged( authUser => {
+      if (authUser) {
+        dispatch ({
+          type: 'SET_USER',
+          user : authUser,
+        })
+      } else {
+        dispatch ({
+          type: 'SET_USER',
+          user: null,
+        })
+      }
     })
   }, [])
 
