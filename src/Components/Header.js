@@ -4,21 +4,22 @@ import SearchIcon from '@mui/icons-material/Search'
 import { ShoppingBasket, LocationOn } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import { useStateValue } from '../StateProvider';
-import { getAuth } from 'firebase/auth';
+import { getAuth, signOut } from 'firebase/auth';
 
 function Header() {
   const [{basket, user}, dispatch] = useStateValue();
-
+  
+  const auth = getAuth();
   const handleAuthentication = () => {
     if (user) {
-      getAuth.signOut();
+      signOut(auth);
     }
   }
   
   return (
     <div className="Header">
       <Link to='/'>
-        <img className="Header-logo" src="./images/Header-logo.png"/>
+        <img className="Header-logo" src="./images/Header-logo.png" alt="Header-logo"/>
       </Link>
 
       <div className="Header-myLocation">
